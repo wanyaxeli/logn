@@ -4,6 +4,10 @@
   height: auto;
   margin: 10px auto;
 }
+a{
+  text-decoration: none;
+  color: #44b7fe;
+}
 .loginWrapper{
   height: auto;
   width: 90%;
