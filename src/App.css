@@ -1,38 +1,78 @@
 .App {
   text-align: center;
+  background-color: #fff;
+  height: auto;
+  margin: 10px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginWrapper{
+  height: auto;
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.loginImageWrapper{
+   flex: .5;
+   height: 400px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginImg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+.loginInputwrapper{
+  flex: 0.45;
+  height: 400px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  padding: 25px 15px;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+form {
+  height: auto;
+  width: 100%;
+}
+form input,form select {
+  border: none;
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  height: 30px;
+}
+form input[type='text'],form select{
+  width: 100%;
+}
+form input::placeholder{
+  color: black;
+  text-transform: capitalize;
+}
+.inputWrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form input[type='password']{
+  flex: .45;
+}
+.loginBtn{
+  width: 90%;
+  height: 40px;
+  background-color: #44b7fe;
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.logintext span{
+  color: #44b7fe;
+  cursor: pointer;
 }
