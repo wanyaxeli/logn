@@ -6,9 +6,9 @@ const Links =()=>{
     return(
         <Routes>
             <Route path="/" exact element={<Login/>}>
-                 <Route index element={<SignIn/>}/>
-               <Route path="up"  element={<SignUp/>}/>
-               <Route path="in" element={<SignIn/>}/>
+                <Route index element={<SignUp/>}/>
+                <Route path="up"  element={<SignUp/>}/>
+                <Route path="in" element={<SignIn/>}/>
             </Route>
         </Routes>
     )

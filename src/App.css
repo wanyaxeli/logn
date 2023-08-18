@@ -34,6 +34,12 @@ a{
   text-align: start;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+.loginInputwrapper h2{
+  text-transform: capitalize;
+}
+.signInwrapper{
+  height: 300px;
+}
 form {
   height: auto;
   width: 100%;
@@ -46,7 +52,7 @@ form input,form select {
   outline: none;
   height: 30px;
 }
-form input[type='text'],form select{
+.signInwrapper input[type='password'], form input[type='text'],form input[type='email'],form select{
   width: 100%;
 }
 form input::placeholder{
@@ -63,13 +69,16 @@ form input::placeholder{
 form input[type='password']{
   flex: .45;
 }
+.btnwrapper{
+  margin: 35px auto 10px auto;
+}
 .loginBtn{
   width: 90%;
   height: 40px;
   background-color: #44b7fe;
   outline: none;
   border: none;
-  margin: 20px 0;
+  margin-top: 20px;
   border-radius: 10px;
   text-transform: capitalize;
   color: #fff;
